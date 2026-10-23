@@ -1,2 +1,7 @@
 # dasongtax-news
-dasongtax-news
+
+다송세무회계 홈페이지(https://dasongtax.co.kr) "판례·세무 뉴스" 칸에 표시되는 데이터입니다.
+
+- `news.json`: 매일 12시 예약 작업이 갱신합니다.
+  - `cases`: 법원 판결·조세심판원 결정 (최대 4건, 원문 링크 필수)
+  - `news`: 세무 뉴스 제목·언론사·링크 (최대 8건, 본문 미포함)
