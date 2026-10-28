@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23 15:46",
+  "updated": "2026-10-28 10:24",
   "cases": [
     {
       "court": "대법원",
@@ -47,13 +47,53 @@
     }
   ],
   "news": [
-    {"title": "'신탁 꼼수'로 종부세 1천만원→10만원 미만 낮춘 40대 송치", "source": "세정일보", "time": "10.23 14:25", "url": "https://www.sejungilbo.com/news/articleView.html?idxno=60779"},
-    {"title": "세무사회, 비즈넵 운영사 대표 고발…“세무대리 오인광고 금지 위반”", "source": "세정일보", "time": "10.23 14:10", "url": "https://www.sejungilbo.com/news/articleView.html?idxno=60776"},
-    {"title": "법인세, 수도권 41.7% 늘어날 때…비수도권은 14.3%에 그쳤다", "source": "세정일보", "time": "10.23 08:55", "url": "https://www.sejungilbo.com/news/articleView.html?idxno=60768"},
-    {"title": "이언주, 산단 조성에 수용된 법인 토지 '양도차익 익금불산입' 추진", "source": "세정일보", "time": "10.23 08:43", "url": "https://www.sejungilbo.com/news/articleView.html?idxno=60767"},
-    {"title": "[법원] 16년간 부동산 개발 돕고 받은 31억…법원 \"전액 과세 정당\"", "source": "세정일보", "time": "10.23 08:41", "url": "https://www.sejungilbo.com/news/articleView.html?idxno=60737"},
-    {"title": "유동수, `27 서울 세계청년대회 후원 세액공제 추진", "source": "세정일보", "time": "10.23 08:00", "url": "https://www.sejungilbo.com/news/articleView.html?idxno=60764"},
-    {"title": "[`26 국감] 빗썸 VIP에 억대 '블랙카드'…요트·명품 쇼핑까지, 국세청 세무조사 시사", "source": "세정일보", "time": "10.22 21:45", "url": "https://www.sejungilbo.com/news/articleView.html?idxno=60769"},
-    {"title": "국세청, 구글 조세회피 대응 강화…박해영 차장 \"과세논리 보강·제도 개선 추진\"", "source": "한국세정신문", "time": "10.22 18:04", "url": "https://www.taxtimes.co.kr/news/article.html?no=277422"}
+    {
+      "title": "당정, 가상자산 과세 유예 결론 못내…\"여러 가지 점검\"",
+      "source": "세정일보",
+      "time": "10.28 09:39",
+      "url": "https://www.sejungilbo.com/news/articleView.html?idxno=60840"
+    },
+    {
+      "title": "문진석, 국외근로자 비과세 한도 월 100만→150만원 상향 추진",
+      "source": "세정일보",
+      "time": "10.28 09:19",
+      "url": "https://www.sejungilbo.com/news/articleView.html?idxno=60836"
+    },
+    {
+      "title": "국세청, AI 가이드라인 제시할 기술자문위원회 발족",
+      "source": "한국세정신문",
+      "time": "10.28 07:53",
+      "url": "https://www.taxtimes.co.kr/news/article.html?no=277493"
+    },
+    {
+      "title": "[판세] 미국에 주소지 둔 원고에게 증여세 납세고지서 공시송달 적법한지",
+      "source": "세정일보",
+      "time": "10.28 07:05",
+      "url": "https://www.sejungilbo.com/news/articleView.html?idxno=60673"
+    },
+    {
+      "title": "가업상속공제 1조 시대…누가, 어디서 받았을까",
+      "source": "택스워치",
+      "time": "10.27 15:22",
+      "url": "https://www.taxwatch.co.kr/article/tax/2026/10/27/0002"
+    },
+    {
+      "title": "감사원, 정부 세수추계 4년간 평균 51조5천억 오차 발생해",
+      "source": "한국세정신문",
+      "time": "10.27 14:48",
+      "url": "https://www.taxtimes.co.kr/news/article.html?no=277486"
+    },
+    {
+      "title": "국세청에 모인 '6대 로펌·회계 빅4'…세무조사 개선 논의",
+      "source": "택스워치",
+      "time": "10.27 14:00",
+      "url": "https://www.taxwatch.co.kr/article/tax/2026/10/27/0001"
+    },
+    {
+      "title": "병원장 배우자 '맞교환 고용'…국세청 칼끝 전국으로 향하나",
+      "source": "택스워치",
+      "time": "10.26 15:24",
+      "url": "https://www.taxwatch.co.kr/article/tax/2026/10/26/0005"
+    }
   ]
 }
