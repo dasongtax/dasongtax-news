@@ -1,6 +1,17 @@
 {
-  "updated": "2026-10-28 10:24",
+  "updated": "2026-10-30 11:55",
   "cases": [
+    {
+      "court": "대법원",
+      "date": "2026-10-27",
+      "tax": "소득세(기타소득)",
+      "caseNo": "2026다202200",
+      "result": "파기환송",
+      "title": "[판례] 단체협약상 유족 특별채용 불이행으로 받은 임금 상당 손해배상금은 기타소득에 해당한다",
+      "summary": "업무상 재해로 사망한 근로자의 자녀가 단체협약의 유족 특별채용 조항에도 채용을 거부당해 임금 상당 손해배상금을 받게 되자, 회사가 이를 과세소득이라며 세금을 떼고 지급하려 했습니다. 원심은 기타소득이 아니라고 보았으나, 대법원은 특별채용 조항이 재산권에 관한 계약이고 배상금이 일실이익 배상으로 순자산 증가를 가져오므로 기타소득에 해당한다며 파기환송했습니다.",
+      "point": "계약 불이행으로 손해배상금을 주고받을 때는 그 배상금이 실제 손해 전보인지, 얻지 못한 이익의 배상인지에 따라 기타소득 원천징수 여부를 검토해야 합니다.",
+      "url": "https://www.scourt.go.kr/portal/news/NewsViewAction.work?seqnum=11365&gubun=4&type=5"
+    },
     {
       "court": "대법원",
       "date": "2026-10-01",
@@ -33,67 +44,56 @@
       "summary": "해외 본사의 국내 관계회사가 무상 반입 부품의 수입신고인이 되어 수입세금계산서를 받고 매입세액을 공제했으나 과세관청이 이를 부인했습니다. 대법원은 그 수입이 원고의 사업을 위한 것이 아니고 원고는 실질적 수입자가 아니므로 사실과 다른 세금계산서라고 본 원심을 유지했습니다.",
       "point": "관계회사 대신 수입신고를 맡는 구조라면 수입의 실질적 귀속과 사업 관련성을 먼저 따져 보아야 합니다.",
       "url": "https://www.scourt.go.kr/portal/news/NewsViewAction.work?seqnum=11310&gubun=4"
-    },
-    {
-      "court": "대법원",
-      "date": "2026-09-23",
-      "tax": "종합소득세",
-      "caseNo": "2026두30835",
-      "result": "상고기각(납세자 패소)",
-      "title": "[판례] 외국납부세액 이월공제액도 국가별 한도 방식으로 계산해야",
-      "summary": "일본 등 해외 소득에 대한 외국납부세액을 공제받은 거주자에게 과세관청이 공제한도를 국가별로 다시 계산해 종합소득세를 부과했습니다. 대법원은 원고를 국내 거주자로 보고, 국가별 한도 방식을 정한 시행령 조항이 유효하며 이월공제액 계산에도 적용된다고 본 원심을 유지했습니다.",
-      "point": "여러 나라에서 소득이 있는 경우 외국납부세액 공제와 이월공제액을 국가별로 나누어 관리해야 합니다.",
-      "url": "https://www.scourt.go.kr/portal/news/NewsViewAction.work?seqnum=11310&gubun=4"
     }
   ],
   "news": [
     {
-      "title": "당정, 가상자산 과세 유예 결론 못내…\"여러 가지 점검\"",
-      "source": "세정일보",
-      "time": "10.28 09:39",
-      "url": "https://www.sejungilbo.com/news/articleView.html?idxno=60840"
-    },
-    {
-      "title": "문진석, 국외근로자 비과세 한도 월 100만→150만원 상향 추진",
-      "source": "세정일보",
-      "time": "10.28 09:19",
-      "url": "https://www.sejungilbo.com/news/articleView.html?idxno=60836"
-    },
-    {
-      "title": "국세청, AI 가이드라인 제시할 기술자문위원회 발족",
+      "title": "1~9월 국세수입 385조…작년보다 95조4천억 더 걷혀",
       "source": "한국세정신문",
-      "time": "10.28 07:53",
-      "url": "https://www.taxtimes.co.kr/news/article.html?no=277493"
+      "time": "10.30 11:00",
+      "url": "https://www.taxtimes.co.kr/news/article.html?no=277543"
     },
     {
-      "title": "[판세] 미국에 주소지 둔 원고에게 증여세 납세고지서 공시송달 적법한지",
+      "title": "한·독일, 이중과세방지협정 개정의정서 서명…조세회피·조약 남용 방지 강화",
       "source": "세정일보",
-      "time": "10.28 07:05",
-      "url": "https://www.sejungilbo.com/news/articleView.html?idxno=60673"
+      "time": "10.30 10:38",
+      "url": "https://www.sejungilbo.com/news/articleView.html?idxno=60880"
     },
     {
-      "title": "가업상속공제 1조 시대…누가, 어디서 받았을까",
+      "title": "“1주택 종부세 14억 상향…‘실거주’ 갈라쳐 비거주자 세부담 높인다”",
+      "source": "세정일보",
+      "time": "10.30 08:39",
+      "url": "https://www.sejungilbo.com/news/articleView.html?idxno=60870"
+    },
+    {
+      "title": "‘주가 누르기’ 할증 과세…“입증책임 전가에 조세불복 폭증 우려”",
+      "source": "세정일보",
+      "time": "10.30 08:32",
+      "url": "https://www.sejungilbo.com/news/articleView.html?idxno=60864"
+    },
+    {
+      "title": "\"코인 수익, 증명은 어떻게?\"…가상자산 자금출처조사 대응법",
       "source": "택스워치",
-      "time": "10.27 15:22",
-      "url": "https://www.taxwatch.co.kr/article/tax/2026/10/27/0002"
+      "time": "10.29 14:54",
+      "url": "https://www.taxwatch.co.kr/article/tax/2026/10/29/0002"
     },
     {
-      "title": "감사원, 정부 세수추계 4년간 평균 51조5천억 오차 발생해",
+      "title": "아파트 거래 위법의심행위 785건 적발…국세청에 490건 통보",
       "source": "한국세정신문",
-      "time": "10.27 14:48",
-      "url": "https://www.taxtimes.co.kr/news/article.html?no=277486"
+      "time": "10.29 13:42",
+      "url": "https://www.taxtimes.co.kr/news/article.html?no=277530"
     },
     {
-      "title": "국세청에 모인 '6대 로펌·회계 빅4'…세무조사 개선 논의",
-      "source": "택스워치",
-      "time": "10.27 14:00",
-      "url": "https://www.taxwatch.co.kr/article/tax/2026/10/27/0001"
+      "title": "12월 결산법인 글로벌최저한세 신고기한은 내년 3월31일까지",
+      "source": "한국세정신문",
+      "time": "10.29 12:00",
+      "url": "https://www.taxtimes.co.kr/news/article.html?no=277515"
     },
     {
-      "title": "병원장 배우자 '맞교환 고용'…국세청 칼끝 전국으로 향하나",
+      "title": "세무조사 빼준다는데…고용·투자 약속 못 지키면?",
       "source": "택스워치",
-      "time": "10.26 15:24",
-      "url": "https://www.taxwatch.co.kr/article/tax/2026/10/26/0005"
+      "time": "10.28 12:00",
+      "url": "https://www.taxwatch.co.kr/article/tax/2026/10/28/0001"
     }
   ]
 }
