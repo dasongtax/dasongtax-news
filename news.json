@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06 11:52",
+  "updated": "2026-11-13 11:55",
   "cases": [
     {
       "court": "대법원",
@@ -48,52 +48,52 @@
   ],
   "news": [
     {
-      "title": "국세청, 고액체납자 ‘대응 수위’ 높인다…고의납부기피자 ‘수색·소송’ 총력전",
+      "title": "정부, 월세 세액공제 확대·부양가족 소득요건 완화 추진…‘월급방위대’ 가동",
       "source": "세정일보",
-      "time": "11.06 07:58",
-      "url": "https://www.sejungilbo.com/news/articleView.html?idxno=60961"
+      "time": "11.13 10:22",
+      "url": "https://www.sejungilbo.com/news/articleView.html?idxno=61095"
     },
     {
-      "title": "국세청, 임대소득 검증 줄이고 추징평가도 폐지‥세원관리 문제없나?",
+      "title": "노동부, 두달간 '가짜 3.3 계약·사업장 쪼개기' 기획감독",
+      "source": "한국세정신문",
+      "time": "11.13 09:56",
+      "url": "https://www.taxtimes.co.kr/news/article.html?no=277720"
+    },
+    {
+      "title": "세무조사 무마·비밀 누설 회계사·세무공무원 기소",
+      "source": "한국세정신문",
+      "time": "11.13 08:38",
+      "url": "https://www.taxtimes.co.kr/news/article.html?no=277714"
+    },
+    {
+      "title": "체납자 실태확인원, “맞춤형 징수는 긍정적…권한·정보보호는 보완해야”",
       "source": "세정일보",
-      "time": "11.06 07:43",
-      "url": "https://www.sejungilbo.com/news/articleView.html?idxno=60982"
+      "time": "11.13 08:24",
+      "url": "https://www.sejungilbo.com/news/articleView.html?idxno=61085"
     },
     {
-      "title": "국세청, '탈세·은닉·차명계좌' 신고포상금 역대급 증액 편성",
+      "title": "경실련 '가상자산 과세 예정대로 2027년 시행해야'",
       "source": "한국세정신문",
-      "time": "11.05 17:32",
-      "url": "https://www.taxtimes.co.kr/news/article.html?no=277629"
+      "time": "11.12 17:22",
+      "url": "https://www.taxtimes.co.kr/news/article.html?no=277711"
     },
     {
-      "title": "가상자산 소득과세 2년 유예…손실이월공제 3년간 허용 추진",
-      "source": "한국세정신문",
-      "time": "11.05 16:03",
-      "url": "https://www.taxtimes.co.kr/news/article.html?no=277624"
-    },
-    {
-      "title": "지방 미분양 취득세 중과 1년 연장…고급주택 가격기준 12억으로 완화",
-      "source": "한국세정신문",
-      "time": "11.05 11:59",
-      "url": "https://www.taxtimes.co.kr/news/article.html?no=277620"
-    },
-    {
-      "title": "국세청, 11월 종합소득세 중간예납의 달…\"개인사업자 154만명 대상\"",
-      "source": "조세금융신문",
-      "time": "11.05 10:45",
-      "url": "https://www.tfmedia.co.kr/news/article.html?no=208651"
-    },
-    {
-      "title": "주식 양도세 더 낸 4687명…신청도 안 했는데 환급",
+      "title": "서울 오피스텔 물려줄 때 세금 더 낼까…기준시가 2.1%↑",
       "source": "택스워치",
-      "time": "11.03",
-      "url": "https://www.taxwatch.co.kr/article/tax/2026/11/03/0001"
+      "time": "11.12",
+      "url": "https://www.taxwatch.co.kr/article/tax/2026/11/12/0001"
     },
     {
-      "title": "세무조사 '출제범위' 공개…기업이 먼저 풀어야 할 숙제",
+      "title": "국세수입 95조원 급증에 나라살림 적자 32조원…8년 만에 최소",
+      "source": "세정일보",
+      "time": "11.12 10:37",
+      "url": "https://www.sejungilbo.com/news/articleView.html?idxno=61076"
+    },
+    {
+      "title": "근로장려금 준다는데도 신청 안 했다…이유 물어보니",
       "source": "택스워치",
-      "time": "11.02",
-      "url": "https://www.taxwatch.co.kr/article/tax/2026/11/02/0003"
+      "time": "11.11",
+      "url": "https://www.taxwatch.co.kr/article/tax/2026/11/11/0001"
     }
   ]
 }
