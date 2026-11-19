@@ -2,8 +2,33 @@
   "runs": [
     {
       "date": "2026-11-19",
-      "theme": "양도세 필요경비(자본적지출·양도비) 누락 경정청구 / 토지 분리과세 재분류 / 증여재산 반환·합의해제(상증법 제4조④)",
-      "doc": "https://claude.ai/artifact/EB8QEwyz2Z6iiret7VTdSj"
+      "theme": "토지 분리과세 재분류 / 양도세 필요경비 누락 / 증여재산 반환·합의해제",
+      "tags": [
+        "재산세",
+        "종부세",
+        "양도세",
+        "증여세",
+        "국세기본법"
+      ],
+      "keywords": [
+        "분리과세",
+        "농지 실경작",
+        "자본적지출",
+        "명도비",
+        "증여재산 반환",
+        "합의해제",
+        "경정청구"
+      ],
+      "docs": [
+        "https://claude.ai/artifact/SSzqpuTQ79hV8x1TtBhwoz",
+        "https://claude.ai/artifact/EB8QEwyz2Z6iiret7VTdSj",
+        "https://claude.ai/artifact/ASyPnuBjmTjbtKVnq4m7j9"
+      ],
+      "checkup": [
+        "2026-11-19-cgt-expenses",
+        "2026-11-19-farmland-separate",
+        "2026-11-19-gift-return"
+      ]
     }
   ]
 }
