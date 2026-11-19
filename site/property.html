@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>재산세 계산기 | 다송세무회계 송원근 세무사</title>
+<meta name="description" content="주택 재산세를 간이 계산합니다. 1세대 1주택 공정시장가액비율과 특례세율, 도시지역분, 지방교육세를 반영합니다.">
+<link rel="canonical" href="https://dasongtax.co.kr/property.html">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<style>
+.calc-page{padding:48px 0 72px;background:var(--paper)}
+.calc-page h1{font-family:var(--serif);font-size:clamp(28px,3.4vw,38px);color:var(--navy);margin:0 0 8px}
+.calc-page .lead2{color:var(--muted);margin:0 0 28px}
+.back{display:inline-block;margin-bottom:18px;font-size:15px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--navy)}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.law{font-size:13px;color:var(--muted);margin-top:18px}
+.law a{color:var(--navy-2)}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img class="brand-mark" src="logo-mark.png" alt="" width="40" height="40">
+      <span>다송세무회계<small>송원근 세무사</small></span>
+    </a>
+    <a class="call" href="tel:0220390481">02-2039-0481</a>
+  </div>
+</header>
+<main class="calc-page">
+  <div class="wrap">
+    <a class="back" href="index.html#tools">다른 세금 계산기 보기</a>
+    <h1>재산세 계산기</h1>
+    <p class="lead2">매년 7월과 9월에 나눠 내는 주택 재산세를 대략 계산해 봅니다.</p>
+    <div class="tool-grid">
+      <div class="tool tool-wide" aria-labelledby="p-title">
+        <h3 id="p-title">주택 재산세 간이 계산</h3>
+        <div class="split"><div>
+          <div class="field"><label for="p-price">주택 공시가격 (원)</label><input id="p-price" inputmode="numeric" placeholder="예: 900,000,000"></div>
+          <div class="field"><label for="p-share">본인 지분 (%)</label><input id="p-share" inputmode="numeric" value="100"></div>
+          <label class="check"><input type="checkbox" id="p-one"> 1세대 1주택 (공정시장가액비율 43~45%, 공시가격 9억 이하면 특례세율)</label>
+          <label class="check"><input type="checkbox" id="p-city" checked> 도시지역분 적용 지역 (서울 등 대부분의 도시지역)</label>
+        </div>
+        <dl class="out out-side" aria-live="polite">
+          <div><dt>공정시장가액비율</dt><dd id="p-r">-</dd></div>
+          <div><dt>과세표준</dt><dd id="p-base">-</dd></div>
+          <div><dt>적용 세율</dt><dd id="p-rate">-</dd></div>
+          <div><dt>재산세</dt><dd id="p-tax">-</dd></div>
+          <div><dt>도시지역분 (0.14%)</dt><dd id="p-city-t">-</dd></div>
+          <div><dt>지방교육세 (재산세의 20%)</dt><dd id="p-edu">-</dd></div>
+          <div class="total"><dt>연간 예상 납부액</dt><dd id="p-total">-</dd></div>
+          <div><dt>납부 시기</dt><dd id="p-due">-</dd></div>
+        </dl></div>
+        <p class="fine">2026년 기준(지방세법 제110조·제111조·제111조의2·제112조·제115조·제151조, 시행령 제109조) 간이 계산입니다. 주택 과세표준상한제, 지방자치단체의 세율 가감, 감면, 지역자원시설세는 반영하지 않았습니다. 공시가격은 부동산공시가격알리미에서 확인할 수 있습니다.</p>
+      </div>
+    </div>
+    <p class="law">근거: <a href="https://www.law.go.kr/법령/지방세법/제110조" target="_blank" rel="noopener">지방세법 제110조</a> · <a href="https://www.law.go.kr/법령/지방세법/제111조" target="_blank" rel="noopener">제111조</a> · <a href="https://www.law.go.kr/법령/지방세법/제111조의2" target="_blank" rel="noopener">제111조의2</a> · <a href="https://www.law.go.kr/법령/지방세법/제112조" target="_blank" rel="noopener">제112조</a> · <a href="https://www.law.go.kr/법령/지방세법/제115조" target="_blank" rel="noopener">제115조</a> · <a href="https://www.law.go.kr/법령/지방세법/제151조" target="_blank" rel="noopener">제151조</a> · <a href="https://www.law.go.kr/법령/지방세법시행령/제109조" target="_blank" rel="noopener">시행령 제109조</a></p>
+    <div class="cta-row">
+      <a class="btn btn-navy" href="tel:0220390481">전화로 상담 예약</a>
+      <a class="btn btn-kakao" href="https://pf.kakao.com/_hgJib" target="_blank" rel="noopener">카카오톡 상담</a>
+      <a class="btn btn-ghost" href="https://booking.naver.com/booking/6/bizes/703279" target="_blank" rel="noopener">네이버 예약</a>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="foot-brand"><img src="logo-mark-white.png" alt="" width="44" height="44"><strong>다송세무회계</strong></p>
+    <p>대표 세무사 송원근</p>
+    <p>서울 송파구 법원로 92 파트너스1, 1동 5층 512호</p>
+    <p>전화 02-2039-0481</p>
+    <p>사업자등록번호 841-19-01493</p>
+    <p class="note">이 계산기는 일반적인 경우를 가정한 간이 계산이며, 실제 세액은 사실관계에 따라 달라질 수 있습니다.</p>
+  </div>
+</footer>
+<script>
+(function(){
+  function num(v){return Number(String(v).replace(/[^0-9]/g,''))||0}
+  function won(n){return Math.round(n).toLocaleString('ko-KR')+'원'}
+  function fmt(el){var n=num(el.value);el.value=n?n.toLocaleString('ko-KR'):''}
+  // 재산세
+  function $(i){return document.getElementById(i)}
+  function std(b){if(b<=6e7)return b*.001;if(b<=15e7)return 6e4+(b-6e7)*.0015;if(b<=3e8)return 195e3+(b-15e7)*.0025;return 57e4+(b-3e8)*.004}
+  function spc(b){if(b<=6e7)return b*.0005;if(b<=15e7)return 3e4+(b-6e7)*.001;if(b<=3e8)return 12e4+(b-15e7)*.002;return 42e4+(b-3e8)*.0035}
+  function run(){
+    var price=num($('p-price').value), share=Math.min(100,Math.max(0,num($('p-share').value)))/100, one=$('p-one').checked, city=$('p-city').checked;
+    var ids=['p-r','p-base','p-rate','p-tax','p-city-t','p-edu','p-total','p-due'];
+    if(!price){ids.forEach(function(i){$(i).textContent='-'});return}
+    var r=one?(price<=3e8?.43:price<=6e8?.44:.45):.60;
+    var base=Math.floor(price*r*share);
+    var special=one&&price<=9e8;
+    var tax=Math.floor(special?spc(base):std(base));
+    var ct=city?Math.floor(base*.0014):0;
+    var edu=Math.floor(tax*.2);
+    var total=tax+ct+edu;
+    $('p-r').textContent=Math.round(r*100)+'%';
+    $('p-base').textContent=won(base);
+    $('p-rate').textContent=special?'1세대 1주택 특례세율 (0.05~0.35%)':'표준세율 (0.1~0.4%)';
+    $('p-tax').textContent=won(tax);
+    $('p-city-t').textContent=won(ct);
+    $('p-edu').textContent=won(edu);
+    $('p-total').textContent=won(total);
+    $('p-due').textContent=tax<=2e5?'7월 16~31일 한 번에 낼 수 있음 (조례에 따름)':'7월 16~31일 '+won(Math.round(total/2))+', 9월 16~30일 '+won(total-Math.round(total/2));
+  }
+  ['p-price','p-share'].forEach(function(i){$(i).addEventListener('input',function(){if(i==='p-price')fmt($(i));run()})});
+  ['p-one','p-city'].forEach(function(i){$(i).addEventListener('change',run)});
+  run();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>종합부동산세 계산기 | 다송세무회계 송원근 세무사</title>
+<meta name="description" content="주택분 종합부동산세를 간이 계산합니다. 1세대 1주택 12억원 공제, 다주택 세율, 재산세 중복분 공제, 고령자·장기보유 공제, 농어촌특별세를 반영합니다.">
+<link rel="canonical" href="https://dasongtax.co.kr/jongbu.html">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<style>
+.calc-page{padding:48px 0 72px;background:var(--paper)}
+.calc-page h1{font-family:var(--serif);font-size:clamp(28px,3.4vw,38px);color:var(--navy);margin:0 0 8px}
+.calc-page .lead2{color:var(--muted);margin:0 0 28px}
+.back{display:inline-block;margin-bottom:18px;font-size:15px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--navy)}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.law{font-size:13px;color:var(--muted);margin-top:18px}
+.law a{color:var(--navy-2)}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img class="brand-mark" src="logo-mark.png" alt="" width="40" height="40">
+      <span>다송세무회계<small>송원근 세무사</small></span>
+    </a>
+    <a class="call" href="tel:0220390481">02-2039-0481</a>
+  </div>
+</header>
+<main class="calc-page">
+  <div class="wrap">
+    <a class="back" href="index.html#tools">다른 세금 계산기 보기</a>
+    <h1>종합부동산세 계산기</h1>
+    <p class="lead2">공시가격 합계가 큰 주택에 12월에 내는 종합부동산세를 대략 계산해 봅니다.</p>
+    <div class="tool-grid">
+      <div class="tool tool-wide" aria-labelledby="j-title">
+        <h3 id="j-title">주택분 종합부동산세 간이 계산</h3>
+        <div class="split"><div>
+          <div class="field"><label for="j-sum" id="j-sum-l">본인 명의 주택 공시가격 합계 (원)</label><input id="j-sum" inputmode="numeric" placeholder="예: 1,800,000,000"></div>
+          <div class="field"><label for="j-type">보유 형태</label>
+            <select id="j-type"><option value="one">1세대 1주택자 (12억원 공제)</option><option value="joint">부부 공동명의 1주택 (유리한 방식 비교)</option><option value="two">2주택 이하 (9억원 공제)</option><option value="three">3주택 이상 (9억원 공제)</option></select></div>
+          <div class="field" id="j-n-wrap" hidden><label for="j-n">보유 주택 수</label><input id="j-n" inputmode="numeric" value="2"></div>
+          <div class="field" id="j-js-wrap" hidden><label for="j-js">본인 지분 (%) — 나머지는 배우자 지분</label><input id="j-js" inputmode="numeric" value="50"></div>
+          <div class="field j-one"><label for="j-age" id="j-age-l">나이 (6월 1일 기준 만 나이)</label><input id="j-age" inputmode="numeric" placeholder="예: 62"></div>
+          <div class="field j-one"><label for="j-hold" id="j-hold-l">보유기간 (년)</label><input id="j-hold" inputmode="numeric" placeholder="예: 11"></div>
+          <div class="field"><label for="j-prop" id="j-prop-l">올해 주택 재산세 부과액 (원, 선택)</label><input id="j-prop" inputmode="numeric" placeholder="모르면 비워 두세요 (자동 추정)"></div>
+        </div>
+        <dl class="out out-side" aria-live="polite">
+          <div><dt>공제금액</dt><dd id="j-ded">-</dd></div>
+          <div><dt>과세표준 (공정시장가액비율 60%)</dt><dd id="j-base">-</dd></div>
+          <div><dt>산출세액</dt><dd id="j-calc">-</dd></div>
+          <div><dt>재산세 중복분 공제</dt><dd id="j-pcr">-</dd></div>
+          <div><dt>고령자·장기보유 공제</dt><dd id="j-old">-</dd></div>
+          <div><dt>종합부동산세</dt><dd id="j-tax">-</dd></div>
+          <div><dt>농어촌특별세 (20%)</dt><dd id="j-rural">-</dd></div>
+          <div id="j-cmp-row" hidden><dt style="white-space:nowrap">방식 비교</dt><dd id="j-cmp">-</dd></div>
+          <div class="total"><dt>예상 납부액</dt><dd id="j-total">-</dd></div>
+          <div><dt>납부 시기</dt><dd id="j-due">-</dd></div>
+        </dl></div>
+        <p class="fine">2026년 기준(종합부동산세법 제8조·제9조, 시행령 제2조의4·제4조의3) 간이 계산입니다. 재산세 중복분 공제는 재산세 부과액을 넣지 않으면 주택 가격이 같다고 보고 추정합니다. 부부 공동명의 1주택은 부부 각자 9억원씩 공제받는 방식과, 신청해서 1세대 1주택자로 12억원 공제·고령자·장기보유 공제를 받는 방식을 비교합니다(9월 16~30일 신청). 세부담 상한, 합산배제 임대주택, 일시적 2주택·상속주택 특례, 법인은 반영하지 않았습니다.</p>
+      </div>
+    </div>
+    <p class="law">근거: <a href="https://www.law.go.kr/법령/종합부동산세법/제8조" target="_blank" rel="noopener">종합부동산세법 제8조</a> · <a href="https://www.law.go.kr/법령/종합부동산세법/제9조" target="_blank" rel="noopener">제9조</a> · <a href="https://www.law.go.kr/법령/종합부동산세법시행령/제2조의4" target="_blank" rel="noopener">시행령 제2조의4</a> · <a href="https://www.law.go.kr/법령/종합부동산세법시행령/제4조의3" target="_blank" rel="noopener">시행령 제4조의3</a> · <a href="https://www.law.go.kr/법령/종합부동산세법/제10조의2" target="_blank" rel="noopener">법 제10조의2(공동명의 1주택자)</a> · <a href="https://www.law.go.kr/법령/종합부동산세법시행령/제5조의2" target="_blank" rel="noopener">시행령 제5조의2</a></p>
+    <div class="cta-row">
+      <a class="btn btn-navy" href="tel:0220390481">전화로 상담 예약</a>
+      <a class="btn btn-kakao" href="https://pf.kakao.com/_hgJib" target="_blank" rel="noopener">카카오톡 상담</a>
+      <a class="btn btn-ghost" href="https://booking.naver.com/booking/6/bizes/703279" target="_blank" rel="noopener">네이버 예약</a>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="foot-brand"><img src="logo-mark-white.png" alt="" width="44" height="44"><strong>다송세무회계</strong></p>
+    <p>대표 세무사 송원근</p>
+    <p>서울 송파구 법원로 92 파트너스1, 1동 5층 512호</p>
+    <p>전화 02-2039-0481</p>
+    <p>사업자등록번호 841-19-01493</p>
+    <p class="note">이 계산기는 일반적인 경우를 가정한 간이 계산이며, 실제 세액은 사실관계에 따라 달라질 수 있습니다.</p>
+  </div>
+</footer>
+<script>
+(function(){
+  function num(v){return Number(String(v).replace(/[^0-9]/g,''))||0}
+  function won(n){return Math.round(n).toLocaleString('ko-KR')+'원'}
+  function fmt(el){var n=num(el.value);el.value=n?n.toLocaleString('ko-KR'):''}
+  // 종합부동산세
+  function $(i){return document.getElementById(i)}
+  function stdP(b){if(b<=6e7)return b*.001;if(b<=15e7)return 6e4+(b-6e7)*.0015;if(b<=3e8)return 195e3+(b-15e7)*.0025;return 57e4+(b-3e8)*.004}
+  var T2=[[3e8,.005,0],[6e8,.007,6e5],[12e8,.010,24e5],[25e8,.013,60e5],[50e8,.015,110e5],[94e8,.020,360e5],[Infinity,.027,1018e5]];
+  var T3=[[3e8,.005,0],[6e8,.007,6e5],[12e8,.010,24e5],[25e8,.020,144e5],[50e8,.030,394e5],[94e8,.040,894e5],[Infinity,.050,1834e5]];
+  function tbl(T,b){for(var i=0;i<T.length;i++){if(b<=T[i][0])return b*T[i][1]-T[i][2]}}
+  function fl(x){return Math.floor(x+1e-6)}
+  function oldRate(){var age=num($('j-age').value),h=num($('j-hold').value);
+    var a=age>=70?.4:age>=65?.3:age>=60?.2:0, k=h>=15?.5:h>=10?.4:h>=5?.2:0; return Math.min(.8,a+k)}
+  // 한 사람 계산: v=본인 공시가격(지분분), ded=공제, T=세율표, pr=재산세 공정시장가액비율, R/S=재산세 부과액/표준세율 상당액, oR=고령·장기 공제율
+  function one(v,ded,T,pr,R,S,oR){
+    var base=Math.max(0,(v-ded)*.6);
+    if(base<=0)return {ded:ded,base:0,calc:0,pcr:0,old:0,tax:0,rural:0};
+    var calc=tbl(T,base), pcr=Math.min(R,R*(base*pr*.004)/S), after=Math.max(0,calc-pcr), old=after*oR;
+    var tax=fl(after-old); return {ded:ded,base:base,calc:calc,pcr:pcr,old:old,oR:oR,tax:tax,rural:fl(tax*.2)};
+  }
+  function show(r,dedTxt,oldTxt){
+    $('j-ded').textContent=dedTxt||won(r.ded);
+    $('j-base').textContent=won(r.base);
+    $('j-calc').textContent=won(r.calc);
+    $('j-pcr').textContent='- '+won(r.pcr)+($('j-prop').value?'':' (추정)');
+    $('j-old').textContent=oldTxt;
+    $('j-tax').textContent=won(r.tax);
+    $('j-rural').textContent=won(r.rural);
+    $('j-total').textContent=won(r.tax+r.rural);
+  }
+  function run(){
+    var type=$('j-type').value, single=type==='one', joint=type==='joint';
+    document.querySelectorAll('.j-one').forEach(function(e){e.hidden=!(single||joint)});
+    $('j-n-wrap').hidden=single||joint;
+    $('j-js-wrap').hidden=!joint;
+    $('j-cmp-row').hidden=!joint;
+    $('j-sum-l').textContent=joint?'주택 전체 공시가격 (원)':'본인 명의 주택 공시가격 합계 (원)';
+    $('j-age-l').textContent=joint?'공동명의 1주택자로 신청할 사람의 나이 (6월 1일 기준 만 나이)':'나이 (6월 1일 기준 만 나이)';
+    $('j-hold-l').textContent=joint?'그 사람의 보유기간 (년)':'보유기간 (년)';
+    $('j-prop-l').textContent=joint?'올해 이 주택 재산세 부과액 (부부 합계, 원, 선택)':'올해 주택 재산세 부과액 (원, 선택)';
+    var sum=num($('j-sum').value);
+    var ids=['j-ded','j-base','j-calc','j-pcr','j-old','j-tax','j-rural','j-total','j-due','j-cmp'];
+    if(!sum){ids.forEach(function(i){$(i).textContent='-'});return}
+    var Rin=num($('j-prop').value);
+    $('j-due').textContent='12월 1일 ~ 12월 15일';
+    if(joint){
+      var p=Math.min(100,Math.max(0,num($('j-js').value)))/100, q=1-p, pr=.45;
+      var Sall=stdP(sum*pr), Rall=Rin||Sall;
+      // 방식 A: 부부 각자 9억원 공제
+      var A1=one(sum*p,9e8,T2,pr,Rall*p,Sall*p,0), A2=one(sum*q,9e8,T2,pr,Rall*q,Sall*q,0);
+      var A={ded:18e8,base:A1.base+A2.base,calc:A1.calc+A2.calc,pcr:A1.pcr+A2.pcr,old:0,tax:A1.tax+A2.tax,rural:A1.rural+A2.rural};
+      // 방식 B: 1세대 1주택자 특례 (12억원 공제 + 고령·장기 공제)
+      var oR=oldRate(), B=one(sum,12e8,T2,pr,Rall,Sall,oR);
+      var tA=A.tax+A.rural, tB=B.tax+B.rural;
+      if(tB<tA){show(B,'12억원 (1주택자 특례)','- '+won(B.old)+' ('+Math.round(oR*100)+'%)');
+        $('j-cmp').textContent='각자 9억원 공제 '+won(tA)+' / 1주택자 특례 '+won(tB)+' → 특례 신청이 유리';
+        $('j-due').textContent='9월 16~30일 특례 신청, 12월 1~15일 납부';}
+      else{show(A,'부부 각 9억원 (합계 18억원)','해당 없음 (각자 과세)');
+        $('j-cmp').textContent='각자 9억원 공제 '+won(tA)+' / 1주택자 특례 '+won(tB)+(tA===tB?' → 같음':' → 각자 과세가 유리 (신청 안 함)');}
+      return;
+    }
+    var ded=single?12e8:9e8;
+    var n=single?1:Math.max(type==='three'?3:1,num($('j-n').value)||(type==='three'?3:2));
+    var pr2=single?.45:.60, S=n*stdP((sum/n)*pr2);
+    var r=one(sum,ded,type==='three'?T3:T2,pr2,Rin||S,S,single?oldRate():0);
+    if(r.base<=0){show(r,null,'-');['j-pcr','j-old'].forEach(function(i){$(i).textContent='0원'});$('j-due').textContent='과세 대상 아님 (공시가격 합계가 공제금액 이하)';return}
+    show(r,null,single?('- '+won(r.old)+' ('+Math.round(r.oR*100)+'%)'):'해당 없음');
+  }
+  ['j-sum','j-n','j-js','j-age','j-hold','j-prop'].forEach(function(i){$(i).addEventListener('input',function(){if(i==='j-sum'||i==='j-prop')fmt($(i));run()})});
+  $('j-type').addEventListener('change',run);
+  run();
+})();
+</script>
+</body>
+</html>
